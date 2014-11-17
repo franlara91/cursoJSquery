@@ -1,0 +1,56 @@
+//Se establece el color del fondo donde estara la foto
+body{
+    background-color:#2D3335;
+    color: #FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+:focus {
+	outline: 0;
+}
+//Se fija el tamaño del contenedor
+.sliderContainer{
+    width: 750px;
+    height: 350px;
+    position: relative;
+    margin: 25px auto;
+}
+#slider {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    width: 600px;
+    height: 350px;
+    background: #FFF;
+    border: 5px solid #FFF;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+#slider .slide{
+    width: 600px;
+    height: 350px;
+    float: left;
+}
+.prev, .next{//Se define como seran los botones que debetan pulsarse para cambiar la foto
+    display: block;
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    top: 147px;
+}
+.prev{//Indica la ruta donde se encuentra la imagen del boton para anterior
+    background: url('img/slider-prev.png') no-repeat;
+    background-position: 0 0;
+    left: 0;
+}
+.prev:hover{
+    background-position: 0 -56px;
+}
+.next{//Indica donde se encuentra la imagen para el boton siguiente
+    background: url('img/slider-next.png') no-repeat;
+    background-position: 0 0;
+    right: 0;
+}
+.next:hover{
+    background-position: 0 -56px;
+}
